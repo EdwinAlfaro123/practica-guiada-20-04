@@ -1,7 +1,7 @@
-import {Browser as Router, Routes, Route} from "react-router"
-import Home from "./pages/Home"
-import Nav from "./components/Nav";
-import DragonBall from "./pages/DragonBall"
+import {BrowserRouter as Router, Routes, Route} from "react-router"
+import Home from "./pages/Home.jsx"
+import Nav from "./components/Nav.jsx";
+import DragonBall from "./pages/DragonBall.jsx"
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <Nav />
           <Routes>
             <Route path="/" element={<Home />}/>
-            <Route path="/" element={<DragonBall />}/>
+            <Route path="/dragon" element={<DragonBall />}/>
           </Routes>
       </Router>
     </>
